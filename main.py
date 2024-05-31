@@ -93,7 +93,7 @@ def plot_map():
     date_string = selected_date.toString('yyyy-MM-dd')
     #date_string = selected_date.toString('2023-01-01')
     
-    r_plot = bm_raster(gdf, product_id=mode, date_range=date_string, bearer=bearer, file_directory=("ntl.tif"))
+    r_plot = bm_raster(gdf, product_id=mode, date_range=date_string, bearer=bearer)
     
     # Clear the previous plot
     sc.ax.clear()
@@ -121,9 +121,6 @@ def plot_map():
     # Refresh the canvas
     sc.draw()
 
-def plot_on_map():
-    pass
-
 app = QApplication(sys.argv)
 
 window = loadUi('BlackMarbleViewer.ui')
@@ -145,6 +142,5 @@ window.button_load.clicked.connect(load_geojson)
 window.box_mode.addItems(["Day", "Month", "Year"])
 
 window.button_plot.clicked.connect(plot_map)
-window.button_map.clicked.connect(plot_on_map)
 
 app.exec()

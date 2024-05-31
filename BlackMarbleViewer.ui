@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1043</width>
-    <height>945</height>
+    <height>917</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -245,13 +245,6 @@
        <widget class="QPushButton" name="button_plot">
         <property name="text">
          <string>Plot</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="button_map">
-        <property name="text">
-         <string>Show Plot on Map</string>
         </property>
        </widget>
       </item>
