@@ -23,10 +23,6 @@ import seaborn as sns
 from blackmarble.extract import bm_extract
 from blackmarble.raster import bm_raster
 
-file = open('/Users/jannik/Library/CloudStorage/OneDrive-Persönlich/Geoinformatik/Geoprogrammierung II/BLACKMARBLE_TOKEN.txt')
-bearer = file.read()
-file.close()
-
 class MplCanvas(FigureCanvas):
     def __init__(self, parent=None, width=5, height=10, dpi=100):
         fig = Figure(figsize=(width, height), dpi=dpi)
