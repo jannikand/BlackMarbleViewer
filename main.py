@@ -62,7 +62,7 @@ def open_gadm():
     webbrowser.open('https://gadm.org/download_country.html')
 
 def load_geojson():
-    load_pfad, filter = QFileDialog.getOpenFileName(window, "Datei öffnen", "", "GeoJSON (*.json) *.geojson *.json.zip)")
+    load_pfad, filter = QFileDialog.getOpenFileName(window, "Datei öffnen", "", "JSON (*.json) ;; GeoJSON (*.geojson) ;; (*.json.zip)")
     global gdf
     gdf = geopandas.read_file(load_pfad)
 
