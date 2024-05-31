@@ -1,0 +1,1 @@
+Erstellen eines GUI mit PyQt5 für blackmarblepy (https://github.com/worldbank/blackmarblepy). Es soll in Folium ein Gebiet eingezeichnet werden können und darunter mit matplotlib die Grafiken dargestellt werden. Oder es soll direkt nach Regionen oder Ländern gesucht werden können. Eventuell kann die Karte mit der Lichtverschmutzung direkt in Folium dargestell werden.
